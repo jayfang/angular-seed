@@ -5,6 +5,8 @@
 angular.module('myApp.filters', []).
   filter('interpolate', ['version', function(version) {
     return function(text) {
-      return String(text).replace(/\%VERSION\%/mg, version);
+      console.log('Input version is' + version + '\n')
+      console.log('Input argument is' + text + '\n')
+      return String(text).replace(/\%VERSION\%/mg, version.major + ' build ' + version.build );
     }
   }]);
