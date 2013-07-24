@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="devEnv">
+<head>
+  <meta charset="utf-8">
+  <title>Dev Environment for UI</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/devenv.css"/>
+</head>
+<body>
+<div class="testcontrols">
+Controller states  <ul class="menu">
+    <li><a href="#/view1">Empty list</a></li>
+    <li><a href="#/view2">4 People - 0 Voted</a></li>
+    <li><a href="#/view3">Negative People</a></li>
+    <li><a href="#/view4">Long List</a></li>
+  </ul>
+</div>
+  <span ng-controller="DevEnvironment">
+	<div class="testcontrols">Controller events<br/>
+	 	<button  ng-click="$broadcast('AddUserToList')">Empty List:: Add person</button>
+	</div>
+  <div ng-view></div>
+  </span>
+
+
+  <div class="testcontrols">
+  <div>Dev environment v<span app-version></span></div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
