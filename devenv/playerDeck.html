@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="devEnv">
+<head>
+  <meta charset="utf-8">
+  <title>Dev Environment for player Deck UI</title>
+  <link rel="stylesheet" href="../app/css/app.css"/>
+  <link rel="stylesheet" href="css/devenv.css"/>
+</head>
+<body>
+<div class="testcontrols">
+Controller states  <ul class="menu">
+    <li><a href="#/view1">Deck</a></li>
+    <li><a href="#/view2">Deck - 1st Voted</a></li>
+  </ul>
+</div>
+  <span>
+	<div class="testcontrols">Controller events<br/>
+	 	<button  ng-click="$broadcast('AddUserToList')">todo button</button>
+	</div>
+  <div ng-view></div>
+  </span>
+
+
+  <div class="testcontrols">
+  <div>Dev environment v<span app-version></span></div>
+  </div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+  <script src="../app/lib/angular/angular.js"></script>
+  <script src="js/playerDeckApp.js"></script>
+  <script src="js/playerDeckControllers.js"></script>
+  <script src="../app/js/services.js"></script>
+  <script src="../app/js/filters.js"></script>
+  <script src="../app/js/directives.js"></script>
+</body>
+</html>

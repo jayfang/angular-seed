@@ -11,6 +11,19 @@ body {
   padding: 0 0 0.1em;
 }
 
+.deckList > li {
+  border: 0.5em solid blue;
+  list-style: none;
+  margin-bottom: 1em;
+  padding: 0 0 0.1em;
+}
+
+.deckList  .votedtrue {
+  border: 0.8em solid red;
+  background: pink;
+}
+
+
 
 /* ORIGINAL
 .menu {
