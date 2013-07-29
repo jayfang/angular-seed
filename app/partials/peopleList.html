@@ -1,5 +1,12 @@
-<p>List of people in room</p>
-<div>How many guests {{present.length}}</div>
-<ul ng-repeat="name in present">
-	<li>{{$index + 1}} {{name}}</li>
-</ul>
+<div ui-if="present.length == 0" >
+	Nobody else has joined yet
+</div>
+<div ui-if="present.length > 0" >
+	<div>Your vote and {{present.length}} others needed</div>
+	<ul class="peopleList" ng-repeat="name in present">
+		<li>{{$index + 1}} {{name}}</li>
+	</ul>
+</div>
+<div ui-if="present.length < 0" > 
+	Oops how can we have {{present.length}} people? Drat! a bug! The developers have been informed &lt;ToDo&gt; but not whipped.
+</div>

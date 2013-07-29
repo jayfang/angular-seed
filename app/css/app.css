@@ -1,5 +1,18 @@
 /* app css stylesheet */
+body {
+  font-family: sans-serif;
+  font-size: 11pt;
+}
 
+.peopleList > li {
+  background: pink;
+  list-style: none;
+  margin-bottom: 2em;
+  padding: 0 0 0.1em;
+}
+
+
+/* ORIGINAL
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -28,3 +41,5 @@
   content: "";
   padding: 0;
 }
+
+*/

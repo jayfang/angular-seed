@@ -2,6 +2,8 @@
 
 /* Filters */
 
+//JDA not currently used in DevEnv 
+
 angular.module('myApp.filters', []).
   filter('interpolate', ['version', function(version) {
     return function(text) {
