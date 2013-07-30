@@ -2,23 +2,25 @@
 <html lang="en" ng-app="devEnv">
 <head>
   <meta charset="utf-8">
-  <title>Dev Environment for Room</title>
+  <title>Dev Environment for UI</title>
   <link rel="stylesheet" href="../app/css/app.css"/>
   <link rel="stylesheet" href="css/devenv.css"/>
 </head>
 <body>
 <div class="testcontrols">
 Controller states  <ul class="menu">
-    <li><a href="#/view1">Empty</a></li>
-    <li><a href="#/view2">In progress</a></li>
+    <li><a href="#/view1">Empty list</a></li>
+    <li><a href="#/view2">4 People - 0 Voted</a></li>
+    <li><a href="#/view3">Negative People</a></li>
+    <li><a href="#/view4">Long List</a></li>
   </ul>
 </div>
-<span>
+  <span ng-controller="DevEnvironment">
 	<div class="testcontrols">Controller events<br/>
-	 	<button  ng-click="$broadcast('AddUserToList')">Empty:: Add Person</button>
+	 	<button  ng-click="$broadcast('AddUserToList')">Empty List:: Add person</button>
 	</div>
-<div ng-view></div>
-</span>
+  <div ng-view></div>
+  </span>
 
 
   <div class="testcontrols">
@@ -29,8 +31,7 @@ Controller states  <ul class="menu">
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
   -->
   <script src="../app/lib/angular/angular.js"></script>
-  <script src="js/roomApp.js"></script>
-  <script src="js/playerDeckControllers.js"></script>
+  <script src="js/peopleListApp.js"></script>
   <script src="js/peopleListControllers.js"></script>
   <script src="../app/js/services.js"></script>
   <script src="../app/js/filters.js"></script>
