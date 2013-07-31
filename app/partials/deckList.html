@@ -1,4 +1,4 @@
 	<ul class="deckList" >
 		<!-- //JDA Improvement:  Do not generate the "votedfalse" class markers in list below -->
-		<li ng-repeat="card in deck" class='voted{{$index == voteIndex}}' ng-click="$emit('vote', $index)">{{card}}</li>
+		<li ng-repeat="card in deck" class='voted{{$index == myVote.Index}}' ng-click="$emit('vote', $index)">{{card}}</li>
 	</ul>

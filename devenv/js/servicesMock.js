@@ -10,7 +10,7 @@ angular.module('myApp.services', []).
   .value('roomState', { 
   		peopleInRoom: ['Jim', 'Jean', 'John'],
   		iAm: 'John',
-  		myVoteIndex: 3,
+  		myVote: { Index: 3 },
   		addPerson: function() {
   			this.peopleInRoom.push('Person' + (this.peopleInRoom.length + 1)  );
   		}
