@@ -37,7 +37,11 @@ body {
    vertical-align: top;
   background-color: beige;
 }
- 
+
+.peopleList .votedtrue {
+  border: 0.8em solid green;
+  margin-left: 0em;
+}
 
 /* ORIGINAL
 .menu {

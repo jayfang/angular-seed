@@ -3,9 +3,9 @@
 </div>
 <div ui-if="present.length > 0" >
 	<ul class="peopleList" >
-		<li ng-repeat="name in present">{{$index + 1}} {{name}}</li>
+		<li ng-repeat="name in present" class="voted{{hasVoted(name)}}">{{$index + 1}} {{name}}</li>
 	</ul>
 </div>
 <div ui-if="present.length < 0" > 
-	Oops how can we have {{present.length}} people? Drat! a bug! The developers have been informed &lt;ToDo&gt; but not whipped.
+	Oops how can we have {{present.length}} people? Drat! a bug! The developers have been informed &lt;ToDo&gt; (but not harmed)
 </div>

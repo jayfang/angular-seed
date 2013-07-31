@@ -34,4 +34,7 @@ angular.module('devEnv.controllers', []).
   }])
   .controller('PeopleFromService', ['$scope', 'roomState', function(sc, rs) {
   	sc.present = rs.peopleInRoom;
+    sc.hasVoted = function(person) {
+      return rs.hasVoted( person );
+    }
   }]);

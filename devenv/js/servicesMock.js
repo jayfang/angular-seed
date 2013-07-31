@@ -10,9 +10,18 @@ angular.module('myApp.services', []).
   .value('roomState', { 
   		peopleInRoom: ['Jim', 'Jean', 'John'],
   		iAm: 'John',
-  		myVote: { Index: 3 },
+  		myVote: { 
+  			Index: 3 
+  		},
+  		otherVotes: {
+  			John: true,
+  			Jim: true
+  		},
   		addPerson: function() {
   			this.peopleInRoom.push('Person' + (this.peopleInRoom.length + 1)  );
+  		},
+  		hasVoted: function(person) {
+  			return ( this.otherVotes[person] == true );
   		}
   });
   
