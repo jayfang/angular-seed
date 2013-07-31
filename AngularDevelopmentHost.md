@@ -45,9 +45,4 @@ To Do
 * Reusable controllers
 * auto re-load functionality
 
-Notes
-=====
-Using
-  js-beautify -j -r -f <...>
-  js-hint with ".jshintrc" file
 
