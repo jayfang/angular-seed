@@ -10,6 +10,7 @@
   margin-bottom: 0em;
   padding: 0 0 0em;
   -webkit-margin-before: 0em;  /* //JDA what is right way to do this */
+  float:clear;
 }
 
 .menu:before {

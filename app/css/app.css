@@ -5,7 +5,7 @@ body {
 }
 
 .peopleList > li {
-  background: pink;
+  background: yellow;
   list-style: none;
   margin-bottom: 2em;
   padding: 0 0 0.1em;
@@ -20,11 +20,23 @@ body {
 
 .deckList  .votedtrue {
   border: 0.8em solid red;
-  background: pink;
+ 
   margin-left: 0em;
 }
 
+#deck {
+  width: 25%;
+  display: inline-block;
+  background-color: lavender;
+}
 
+#people {
+  width: 50%;
+  display: inline-block;
+   vertical-align: top;
+  background-color: beige;
+}
+ 
 
 /* ORIGINAL
 .menu {
