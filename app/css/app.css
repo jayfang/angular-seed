@@ -7,20 +7,21 @@ body {
 .peopleList > li {
   background: yellow;
   list-style: none;
-  margin-bottom: 2em;
-  padding: 0 0 0.1em;
+  margin-bottom: 1em;
+}
+.deckList {
+ padding: 0;
 }
 
 .deckList > li {
   border: 0.5em solid blue;
   list-style: none;
-  margin-bottom: 1em;
-  margin-left: 1em;
+  margin-bottom: 0.3em;
+  margin-left: 2em;
 }
 
 .deckList  .votedtrue {
   border: 0.8em solid red;
- 
   margin-left: 0em;
 }
 

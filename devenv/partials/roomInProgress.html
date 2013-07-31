@@ -1,2 +1,5 @@
+<div id="status" ng-controller="PeopleFromService"  >
+<span ui-if='present.length > 0'>Your vote and {{present.length}} others needed</span>
+</div>
 <div id="deck" ng-include="'../app/partials/deckList.html'" ng-controller="deckVoted1st"></div>
 <div id="people" ng-include="'../app/partials/peopleList.html'" ng-controller="PeopleFromService"></div>
