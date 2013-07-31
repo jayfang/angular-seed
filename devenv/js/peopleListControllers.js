@@ -4,8 +4,10 @@
 
 angular.module('devEnv.controllers', []).
 // Development environment controller
-  controller('DevEnvironment', ['$scope', function(sc) {
-  	//JDA not used   	// sc.topName = 'DevEnvironment::TopName';
+  controller('DevEnvironment', ['$scope', 'roomState', function(sc, rs) {
+		sc.addPerson = function() {
+  		rs.addPerson();
+  	};
   }])
 // Application Test Controllers
   .controller('EmptyList', ['$scope', 'roomState', function(sc, rs) {  
@@ -30,6 +32,6 @@ angular.module('devEnv.controllers', []).
 	    sc.present.push('Disp Person ' + (sc.present.length + 1)  );
 	  }
   }])
-  .controller('PeopleSample4', ['$scope', 'roomState', function(sc, rs) {
-  	sc.present = ['Jim', 'Jean', 'John','Sam'];
+  .controller('PeopleFromService', ['$scope', 'roomState', function(sc, rs) {
+  	sc.present = rs.peopleInRoom;
   }]);
