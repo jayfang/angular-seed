@@ -46,3 +46,16 @@ To Do
 * auto re-load functionality
 
 
+Configurations
+==============
+Grunt
+-----
+npm install -g grunt-cli
+npm install grunt-cli
+
+npm install grunt-contrib-jshint
+npm install grunt-contrib-uglify
+npm install grunt-contrib-watch
+npm install grunt-simple-mocha
+npm install grunt-jsbeautifier
+
