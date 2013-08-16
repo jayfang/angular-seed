@@ -1,0 +1,6 @@
+<div id="resultsList" ng-controller="Results"  >
+	<li ng-repeat='card in deck' ><span id='resultCard'>{{card}}</span>
+		 <!-- the nbsp here is for CSS. How best to handle this so normal deck lines don't include the nbsp -->
+		&nbsp;<span id='voteBlock' ng-repeat='person in votes[card]'>{{votes[card][$index]}}</span>
+	</li>
+</div>

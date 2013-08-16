@@ -2,7 +2,7 @@
 
 
 // Declare app level module which depends on filters, and services
-angular.module('devEnv', ['myApp.filters', 'myApp.services', 'myApp.directives', 'playerdeck.controllers', 'devEnv.controllers']).
+angular.module('devEnv', ['myApp.filters', 'myApp.services', 'myApp.directives', 'playerdeck.controllers', 'devEnv.controllers', 'results.controllers']).
 config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.when('/view1', {
@@ -10,6 +10,9 @@ config(['$routeProvider',
         });
         $routeProvider.when('/view2', {
             templateUrl: '../devenv/partials/roomInProgress.html'
+        });
+        $routeProvider.when('/view3', {
+            templateUrl: '../devenv/partials/results.html'
         });
         $routeProvider.otherwise({
             redirectTo: '/view1'

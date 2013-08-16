@@ -25,5 +25,10 @@ value('version', {
         },
         hasVoted: function(person) {
             return (this.otherVotes[person] === true);
+        },
+        results: { // Format is not advised - just for expirimentation
+            cardIndex3: ['Sue'],
+            cardIndex5: ['Sean', 'Shane'],
+            cardIndex7: ['Sam', 'Sinead']
         }
     });

@@ -43,6 +43,33 @@ body {
   margin-left: 0em;
 }
 
+#voteBlock {
+  background-color: greenyellow;
+  margin-right: 3px;
+  margin-left: 0em;
+  padding-left: 0.5rem;
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#resultsList {
+  list-style: none;
+}
+
+
+#resultsList > li {
+  margin-top: 0.1rem;
+  
+}
+
+#resultCard {
+  display: inline-block;
+  width: 2rem;
+}
+
+
+
 /* ORIGINAL
 .menu {
   list-style: none;
